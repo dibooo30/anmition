@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+*{
+    box-sizing: border-box !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing:border-box;
+}
+.clear{
+    clear: both;
+}
+.so{
+    position: absolute;
+    right: 30px;
+    color: red;
+    z-index: 100;
+    display: none;
+    cursor: pointer;
+}
+    .div1{
+        width: 200px;
+        height: 200px;
+        background:#ccc;
+        float: left;
+        position: relative;
+        transition: all ease .5s;
+        transition: all ease .3s;
+    }
+    .div1:nth-child(2){
+        background:lightseagreen;
+
+    }
+    .div1:nth-child(3){
+        background:rgb(236, 142, 54);
+
+    }
+    .div1:nth-child(4){
+        background:rgb(233, 25, 25);
+
+    }
+    .div1:nth-child(5){
+        background:rgb(67, 255, 83);
+
+    }
+    .div1:nth-child(6){
+        background:rgb(73, 64, 155);
+
+    }
+    .re{
+        position: absolute;
+        width: 400px;
+    }
+    .ro{
+        position: relative;
+        width: 200px;
+        
+    }
+    .img{
+        float: left;
+        max-width:50%;
+        min-width: 200px;
+        height: 200px;
+
+    }
+    .p-contanir{
+        margin: 0px;
+        display: inline-block;
+        height: 200px;
+        margin: 0px;
+        display: block;
+        border: 10px solid transparent;
+        overflow: auto !important;
+        display: none;
+    }
+    p{
+        color: #000;
+    }
+    .container{
+        overflow: hidden !important;
+        width: 50%;
+        height: 100%;
+    }
+    /* .abs{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 50%;
+        bottom: 0;
+    } */
+    </style>
+</head>
+<body>
+    <div class="div1 back" onclick="move(this)">
+        <span class="so " >X</span>
+        <img class="img" src="./nemo.png" alt="nemo image">
+        <!-- <div class="container"> -->
+                <div class="p-contanir">
+                    <h3>hello</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+                </div>
+        <!-- </div> -->
+    </div>
+    <div class="div1 back" onclick="move(this)">
+        <span class="so "  >X</span>
+        <img class="img" src="./oldman.png" alt="nemo image">
+        <div class="p-contanir">
+            <h3>hello</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+        </div>
+    </div>
+    <div class="div1 back" onclick="move(this)">
+        <span class="so "  >X</span>
+        <img class="img" src="./nemo.png" alt="nemo image">
+        <div class="p-contanir">
+            <h3>hello</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+        </div>
+    </div>
+    <div class="div1 back" onclick="move(this)">
+        <span class="so "  >X</span>
+        <img class="img" src="./ted.png" alt="nemo image">
+        <div class="p-contanir">
+            <h3>hello</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+        </div>
+    </div>
+    <div class="div1 back" onclick="move(this)">
+        <span class="so "  >X</span>
+        <img class="img" src="./doctor.png" alt="nemo image">
+        <div class="p-contanir">
+            <h3>hello</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+        </div>
+    </div>
+    <div class="div1 back" onclick="move(this)">
+            <span class="so "  >X</span>
+            <img class="img" src="./oldman.png" alt="nemo image">
+            <div class="p-contanir">
+                <h3>hello</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+            </div>
+        </div>
+        <div class="div1 back" onclick="move(this)">
+            <span class="so "  >X</span>
+            <img class="img" src="./ted.png" alt="nemo image">
+            <div class="p-contanir">
+                <h3>hello</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+            </div>
+        </div>
+        <div class="div1 back" onclick="move(this)">
+            <span class="so "  >X</span>
+            <img class="img" src="./nemo.png" alt="nemo image">
+            <div class="p-contanir">
+                <h3>hello</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+            </div>
+        </div>
+        <div class="div1 back" onclick="move(this)">
+            <span class="so "  >X</span>
+            <img class="img" src="./oldman.png" alt="nemo image">
+            <div class="p-contanir">
+                <h3>hello</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+            </div>
+        </div>
+        <div class="div1 back" onclick="move(this)">
+            <span class="so "  >X</span>
+            <img class="img" src="./doctor.png" alt="nemo image">
+            <div class="p-contanir">
+                <h3>hello</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+            </div>
+        </div>
+        <div class="div1 back" onclick="move(this)">
+                <span class="so " >X</span>
+                <img class="img" src="./nemo.png" alt="nemo image">
+                <!-- <div class="container"> -->
+                        <div class="p-contanir">
+                            <h3>hello</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+                        </div>
+                <!-- </div> -->
+            </div>
+            <div class="div1 back" onclick="move(this)">
+                <span class="so "  >X</span>
+                <img class="img" src="./oldman.png" alt="nemo image">
+                <div class="p-contanir">
+                    <h3>hello</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+                </div>
+            </div>
+            <div class="div1 back" onclick="move(this)">
+                <span class="so "  >X</span>
+                <img class="img" src="./nemo.png" alt="nemo image">
+                <div class="p-contanir">
+                    <h3>hello</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+                </div>
+            </div>
+            <div class="div1 back" onclick="move(this)">
+                <span class="so "  >X</span>
+                <img class="img" src="./ted.png" alt="nemo image">
+                <div class="p-contanir">
+                    <h3>hello</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+                </div>
+            </div>
+            <div class="div1 back" onclick="move(this)">
+                <span class="so "  >X</span>
+                <img class="img" src="./doctor.png" alt="nemo image">
+                <div class="p-contanir">
+                    <h3>hello</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+                </div>
+            </div>
+            <div class="div1 back" onclick="move(this)">
+                    <span class="so "  >X</span>
+                    <img class="img" src="./oldman.png" alt="nemo image">
+                    <div class="p-contanir">
+                        <h3>hello</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+                    </div>
+                </div>
+                <div class="div1 back" onclick="move(this)">
+                    <span class="so "  >X</span>
+                    <img class="img" src="./ted.png" alt="nemo image">
+                    <div class="p-contanir">
+                        <h3>hello</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+                    </div>
+                </div>
+                <div class="div1 back" onclick="move(this)">
+                    <span class="so "  >X</span>
+                    <img class="img" src="./nemo.png" alt="nemo image">
+                    <div class="p-contanir">
+                        <h3>hello</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+                    </div>
+                </div>
+                <div class="div1 back" onclick="move(this)">
+                    <span class="so "  >X</span>
+                    <img class="img" src="./oldman.png" alt="nemo image">
+                    <div class="p-contanir">
+                        <h3>hello</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+                    </div>
+                </div>
+                <div class="div1 back" onclick="move(this)">
+                    <span class="so "  >X</span>
+                    <img class="img" src="./doctor.png" alt="nemo image">
+                    <div class="p-contanir">
+                        <h3>hello</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum vet, amet consectetur adipisicing elit. Unde perspiciatis neque consequuntur quod sint eum veritatis quibusdam enim odio quae nemo repellendus at, velit adipisci nulla earum! Adipisci, officia inventore.</p>
+                    </div>
+                </div>
+        <div class="clear"></div>
+    <script src="js.js"></script>
+</body>
+</html>
